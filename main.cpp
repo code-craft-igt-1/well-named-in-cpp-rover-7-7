@@ -9,7 +9,9 @@ void testNumberToPair(int pairNumber, MajorColor expectedMajor, MinorColor expec
     ColorPair colorPair = GetColorFromPairNumber(pairNumber);
     std::cout << "Got pair " << colorPair.ToString() << std::endl;
     assert(colorPair.getMajor() == expectedMajor);
+    std::cout<<colorPair.getMajor()<<" "<<colorPair.getMinor();
     assert(colorPair.getMinor() == expectedMinor);
+    
 }
 
 void testPairToNumber(MajorColor major, MinorColor minor, int expectedPairNumber) {
@@ -19,7 +21,7 @@ void testPairToNumber(MajorColor major, MinorColor minor, int expectedPairNumber
 }
 
 int main() {
-    testNumberToPair(1, WHITE, BROWN);
+    testNumberToPair(4, WHITE, BROWN);
     testNumberToPair(5, WHITE, SLATE);
     testPairToNumber(BLACK, ORANGE, 12);
     testPairToNumber(VIOLET, SLATE, 25);
