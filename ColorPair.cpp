@@ -1,5 +1,5 @@
 #include "ColorPair.h"
-#include "ColorUtils.h"
+#include "ColorDeclarations.h"
 
 using namespace TelCoColorCoder;
 

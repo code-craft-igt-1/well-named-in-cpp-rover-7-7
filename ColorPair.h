@@ -20,4 +20,4 @@ namespace TelCoColorCoder
     };
 }
 
-#endif // COLORPAIR_H
+#endif 
